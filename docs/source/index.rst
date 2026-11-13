@@ -1,6 +1,25 @@
 PyKEEN
 ======
 
+PyKEEN helps you learn embeddings from knowledge graphs: collections of facts represented as ``(head, relation, tail)``
+triples. These embeddings can help you rank missing links, compare models, or use the learned representations in other
+machine learning tasks.
+
+What can I do with PyKEEN?
+--------------------------
+
+- **Predict missing links.** Rank candidate entities for an incomplete triple, or score candidate triples, with a
+  trained model. See :doc:`reference/predict`.
+- **Compare knowledge graph embedding models.** Train and evaluate models on the same dataset, with explicit choices
+  about candidate entities and filtering. See :doc:`explanation/understanding_evaluation`.
+- **Reuse learned representations.** Export entity and relation embeddings for tasks such as clustering, regression, or
+  classification. See :doc:`tutorial/first_steps`.
+- **Work with your own knowledge graph.** Load triples from your data and construct training, validation, and test
+  splits. See :doc:`howto/bring_your_own_data`.
+
+Getting Started
+---------------
+
 .. automodule:: pykeen
 
 This documentation is organized following the `Diátaxis <https://diataxis.fr/>`_ framework, which distinguishes between
